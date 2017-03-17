@@ -55,7 +55,9 @@ public class Main2Activity extends AppCompatActivity {
             //toActivity2
             Intent intent = new Intent();
             intent.setClass(Main2Activity.this , MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);        //re-use activity
             startActivity(intent);
+            this.finish();
 
             return true;
         }

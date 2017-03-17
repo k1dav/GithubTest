@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onNewIntent(Intent intent){
+        if(this.count<song.length){
+            lrc.setText(song[count]);
+        }else{
+            lrc.setText("No more Lrc");
+        }
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemThatWasClickedId = item.getItemId();            //check item id
         if (itemThatWasClickedId == R.id.GoToActivityII) {
