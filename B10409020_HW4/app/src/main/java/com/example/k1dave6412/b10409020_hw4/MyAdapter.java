@@ -59,16 +59,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     R.drawable.female);
             holder.mImageSex.setImageBitmap(icon);
         }
+
+        holder.itemView.setTag(id);
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView mTextNumber;
-        public TextView mTextName;
-        public TextView mTextAge;
-        public ImageView mImageSex;
+    class MyViewHolder extends RecyclerView.ViewHolder {
+        TextView mTextNumber,mTextName,mTextAge;
+        ImageView mImageSex;
 
-        public MyViewHolder(View view) {
-            super(view);
+        public MyViewHolder(View itemView) {
+            super(itemView);
             mTextNumber = (TextView) itemView.findViewById(R.id.numberText);
             mTextName = (TextView) itemView.findViewById(R.id.nameText);
             mTextAge = (TextView) itemView.findViewById(R.id.ageText);

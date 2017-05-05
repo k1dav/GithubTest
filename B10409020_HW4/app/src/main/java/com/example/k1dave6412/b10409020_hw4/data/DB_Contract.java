@@ -11,6 +11,6 @@ public class DB_Contract {
         public static final String TABLE_NAME = "memberList";
         public static final String COLUMN_GUEST_NAME = "guestName";
         public static final String COLUMN_GUEST_AGES = "guestAges";
-        public static final String COLUMN_GUEST_SEX = "guestGender";
+        public static final String COLUMN_GUEST_SEX = "guestGender";//1 female 2male
     }
 }

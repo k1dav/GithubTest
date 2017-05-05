@@ -12,17 +12,16 @@
         android:layout_height="match_parent" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
         android:layout_width="80sp"
         android:layout_height="80sp"
         android:layout_gravity="bottom|end"
         android:layout_margin="16sp"
         android:elevation="6dp"
+        android:onClick="customDialog"
         android:src="@mipmap/add_people"
-        app:fabSize="normal"
         app:backgroundTint="@color/colorBackground"
-        app:pressedTranslationZ="12dp"
-        />
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
 
 
 </FrameLayout>

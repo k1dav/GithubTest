@@ -3,7 +3,6 @@ package com.example.k1dave6412.b10409020_hw4.data;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import static com.example.k1dave6412.b10409020_hw4.data.DB_Contract.DB_Entry.*;
 

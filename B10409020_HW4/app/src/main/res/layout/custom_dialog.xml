@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20sp" />
+
+    <EditText
+        android:id="@+id/age_input"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:paddingLeft="20sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/female_button"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/female_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_marginLeft="50sp"
+            android:checked="false" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:paddingRight="50sp"
+            android:textAlignment="viewStart"
+            app:srcCompat="@drawable/female" />
+
+        <RadioButton
+            android:id="@+id/male_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:paddingRight="60dp"
+            app:srcCompat="@drawable/male" />
+
+    </RadioGroup>
+
+</LinearLayout>
