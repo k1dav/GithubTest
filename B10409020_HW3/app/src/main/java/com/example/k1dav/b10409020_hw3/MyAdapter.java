@@ -56,11 +56,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mTextView.setText(String.valueOf(position + 1));
         if (status[position] == 0) {
-            holder.mRoot.setBackgroundColor(Color.WHITE);
+            holder.mRoot.setBackgroundColor(Color.parseColor("#FFFFFF"));
         } else if (status[position] == -1) {
-            holder.mRoot.setBackgroundColor(Color.GRAY);
+            holder.mRoot.setBackgroundColor(Color.parseColor("#b4b4b4"));
         } else if (status[position] == 1) {
-            holder.mRoot.setBackgroundColor(Color.RED);
+            holder.mRoot.setBackgroundColor(Color.parseColor("#ff4747"));
         }
     }
 

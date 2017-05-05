@@ -13,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:id="@+id/linear">
+        android:id="@+id/linear"
+        android:background="@drawable/custom_border">
+
 
         <TextView
             android:id="@+id/info_text"
