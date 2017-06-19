@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.k1dave6412.b10409020_hw5.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/time_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/cardview_shadow_end_color" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16sp"
+        android:elevation="6dp"
+        android:onClick="customDialog"
+        android:src="@mipmap/add"
+        app:backgroundTint="@color/cardview_shadow_end_color"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+
+</FrameLayout>
